@@ -5,41 +5,41 @@ e voglio che qualcuno salvi quello che ho scritto.
    
 Questo progetto vuole essere un plugin che mi consenta di gestire i pomodori da riga di comando.
 
-Questo plugin voglio che: 
-, chieda cosa si intende fare nel pomodoro che si sta per iniziare 
-, che "tracci in automatico" l'inizio e la fine
-, che dia l'elenco dei pomodori svolti
-, esegua un suono dopo i 25 minuti del pomodoro
+** Questo plugin voglio che: 
+*** TODO chieda cosa si intende fare nel pomodoro che si sta per iniziare.
+*** TODO che "tracci in automatico" l'inizio e avvisi della fine del pomodoro.
+*** TODO che dia l'elenco dei pomodori svolti.
+*** TODO esegua un suono dopo i 25 minuti del pomodoroa     
 
+Per adesso questa è l'idea, per mettere su sta cosa imparerò groovy, emacs,
 
-Per adesso questa è l'idea, per mettere su sta cosa imparerò groovy, emacs, org.
 
 
 ** Come implementazione stavo pensando ad una cosa del tipo: 
- .interprete di riga di comando
- .groovy che tramite un orm salvi su un db (basato su file) 
-  _ il messaggio del pomodoro 
-  _ l'ora di inizio e fine
++interprete di riga di comando.
++groovy che tramite un orm salvi su un db (basato su file).
++il messaggio del pomodoro.
++l'ora di inizio e fine.
   
   
 
 
 *** Un po di codice ....  
   
-class Tomato {
-private String message; // letta dalla riga di comando
-private Date start; 
-...
-}  
+=class Tomato {=
+=private String message; // letta dalla riga di comando=
+=private Date start;=
+=...=
+=}=  
 
-class TomatoTask {
-...
-Tomato tomato = new Tomato (message, new Date());
-salva(tomato); 
-startCountdown(25_MINUTI);
-playEndTomatoSong();
-...
-}
+=class TomatoTask {=
+=...=
+=Tomato tomato = new Tomato (message, new Date());=
+=salva(tomato);=
+=startCountdown(25_MINUTI);=
+=playEndTomatoSong();=
+=...
+=}=
 
 sarebbe un crud da riga di comando con groovy non credo sia tanto incasinata la cosa ..... 
 
@@ -47,3 +47,5 @@ sarebbe un crud da riga di comando con groovy non credo sia tanto incasinata la 
 
 
   
+
+
