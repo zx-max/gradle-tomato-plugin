@@ -27,19 +27,34 @@ Per adesso questa è l'idea, per mettere su sta cosa imparerò groovy, emacs,
 *** Un po di codice ....  
   
 =class Tomato {=
+
 =private String message; // letta dalla riga di comando=
+
 =private Date start;=
+
 =...=
+
 =}=  
 
+
+
 =class TomatoTask {=
+
 =...=
+
 =Tomato tomato = new Tomato (message, new Date());=
+
 =salva(tomato);=
+
 =startCountdown(25_MINUTI);=
+
 =playEndTomatoSong();=
-=...
+
+=...=
+
 =}=
+
+
 
 sarebbe un crud da riga di comando con groovy non credo sia tanto incasinata la cosa ..... 
 
