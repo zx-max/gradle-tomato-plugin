@@ -13,7 +13,7 @@ import java.lang.reflect.Method;
 
 class TomatoPluginTest {
 /*
- Explain the order of execution of the acions in a single task.
+ Explain the order of execution of the actions in a single task.
  
 org.gradle.api.internal.project.taskfactory.AnnotationProcessingTaskFactory.createTask(ProjectInternal project, Map<String, ?> args){
 ...
